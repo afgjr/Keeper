@@ -43,7 +43,7 @@ A beautiful, responsive, and full-stack note-taking application inspired by Goog
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/keeper.git
+   git clone https://github.com/afgjr/keeper.git
    cd keeper
    ```
 
