@@ -43,38 +43,30 @@ A beautiful, responsive, and full-stack note-taking application inspired by Goog
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/keeper.git
+   git clone https://github.com/afgjr/keeper.git
    cd keeper
    ```
 
-2. **Setup Backend**
+2. **Install all dependencies**
    ```bash
-   cd backend
    npm install
    ```
+   *This command installs dependencies for both the frontend and backend automatically.*
+
+3. **Setup Environment Variables**
    - Create a `.env` file in the project root:
      ```env
-     PORT=5000
+     PORT=5001
      MONGODB_URI=mongodb://localhost:27017/keeperdb
      ```
 
-3. **Setup Frontend**
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
 ### Running the App
 
-1. **Start the Backend** (from the `backend` folder)
+1. **Start both Frontend and Backend** (from the root folder)
    ```bash
    npm run dev
    ```
-
-2. **Start the Frontend** (from the `frontend` folder)
-   ```bash
-   npm start
-   ```
+   *The backend will run on port 5001 and the frontend on port 3000.*
    Go to `http://localhost:3000` to see the app!
 
 ---

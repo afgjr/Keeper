@@ -60,7 +60,7 @@ router.put('/:id', async (req, res) => {
       { title: req.body.title, content: req.body.content, color: req.body.color },
       { returnDocument: 'after' }
     );
-    console.log(req.body.title)
+    // console.log(req.body.title)
     res.json(updatedNote);
 
   } catch (err) {
