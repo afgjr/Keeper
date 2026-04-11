@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Note from "./components/Note";
 
-const API_URL = "http://localhost:5000/api/notes";
+const API_URL = "http://localhost:5001/api/notes";
 
 function App() {
   const [notes, setNotes] = useState([]);

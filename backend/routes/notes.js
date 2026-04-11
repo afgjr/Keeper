@@ -47,6 +47,7 @@ router.delete('/:id', async (req, res) => {
 
 // Update a note by id
 router.put('/:id', async (req, res) => {
+  const id = req.params.id.trim();
   if (!req.body.title || req.body.title.trim() === '') {
     return res.status(400).json({ message: 'Title cannot be empty' });
   }
@@ -55,7 +56,7 @@ router.put('/:id', async (req, res) => {
   }
   try {
     const updatedNote = await Note.findByIdAndUpdate(
-      req.params.id,
+      id,
       { title: req.body.title, content: req.body.content, color: req.body.color },
       { returnDocument: 'after' }
     );
