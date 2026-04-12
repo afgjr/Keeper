@@ -56,7 +56,7 @@ A beautiful, responsive, and full-stack note-taking application inspired by Goog
 3. **Setup Environment Variables**
    - Create a `.env` file in the project root:
      ```env
-     PORT=5001
+     PORT=5000
      MONGODB_URI=mongodb://localhost:27017/keeperdb
      ```
 
@@ -66,7 +66,7 @@ A beautiful, responsive, and full-stack note-taking application inspired by Goog
    ```bash
    npm run dev
    ```
-   *The backend will run on port 5001 and the frontend on port 3000.*
+   *The backend will run on port 5000 and the frontend on port 3000.*
    Go to `http://localhost:3000` to see the app!
 
 ---
